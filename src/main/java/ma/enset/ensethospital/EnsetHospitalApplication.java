@@ -16,10 +16,10 @@ public class EnsetHospitalApplication {
         SpringApplication.run(EnsetHospitalApplication.class, args);
     }
 
-    @Bean
+   // @Bean
     CommandLineRunner start(PatientRepository patientRepository){
         return args -> {
-            patientRepository.save(new Patient(null,"Asmae",new Date(),false,123));
+            patientRepository.save(new Patient(null,"Asmae",new Date(),false,173));
             patientRepository.save(new Patient(null,"Nassima",new Date(),false,365));
             patientRepository.save(new Patient(null,"Youssef",new Date(),false,189));
             patientRepository.save(new Patient(null,"Meriem",new Date(),false,212));
